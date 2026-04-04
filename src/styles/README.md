@@ -1,3 +1,5 @@
+<div align="center">
+  <img src="./public/hero-section.png" alt="Point Design Banner" width="100%" />'
 
   # 🚀 Point Design - Digital Agency
   
