@@ -1,5 +1,3 @@
-<div align="center">
-  <img src="./public/banner.png" alt="Point Design Banner" width="100%" />
 
   # 🚀 Point Design - Digital Agency
   
