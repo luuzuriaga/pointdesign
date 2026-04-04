@@ -37,8 +37,8 @@ export function useHeroScene(canvasRef: React.RefObject<HTMLCanvasElement | null
 
     // Main sphere group
     const group = new THREE.Group();
-    // Offset to the right as in original HTML
-    group.position.set(4.2, 0, 0);
+    // Offset even further to the right
+    group.position.set(7.5, 0, 0);
     scene.add(group);
 
 
@@ -186,7 +186,7 @@ export function useHeroScene(canvasRef: React.RefObject<HTMLCanvasElement | null
       
       camera.position.x = mouseX * 0.3;
       camera.position.y = -mouseY * 0.2;
-      camera.lookAt(2.5, 0, 0);
+      camera.lookAt(4.0, 0, 0);
 
       
       renderer.render(scene, camera);

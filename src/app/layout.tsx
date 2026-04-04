@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   description: "Construimos experiencias digitales memorables.",
 };
 
+import CustomCursor from "@/components/ui/CustomCursor";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${dmSans.variable} ${nunito.variable}`}>
+        <CustomCursor />
         {children}
       </body>
     </html>
