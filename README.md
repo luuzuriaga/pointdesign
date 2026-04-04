@@ -79,8 +79,3 @@ src/
 
 This project is specialized for **Point Design Agency**. All rights reserved.
 
----
-
-<div align="center">
-  Developed by <b>Antigravity</b> for <b>Point Design</b>
-</div>
