@@ -1,0 +1,186 @@
+.main {
+  background: var(--bg-deep);
+  min-height: 100vh;
+  padding-bottom: 8rem;
+}
+
+.header {
+  padding: 10rem 0 4rem;
+  text-align: center;
+}
+
+.backLink {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  display: inline-block;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.backLink:hover {
+  opacity: 1;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.resumen {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.heroImageContainer {
+  margin-bottom: 4rem;
+}
+
+.heroImage {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+}
+
+.contentContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  color: rgba(240, 238, 255, 0.85);
+  line-height: 1.8;
+  font-size: 1.15rem;
+}
+
+.content h1, .content h2, .content h3 {
+  color: white;
+  font-family: var(--font-heading);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.content h2 { font-size: 2rem; font-weight: 800; }
+.content h3 { font-size: 1.5rem; font-weight: 700; }
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.markdownImage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 3rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.imageLeft {
+  float: left;
+  width: 45%;
+  margin: 1rem 2rem 1rem 0;
+}
+
+.imageSmall {
+  max-width: 50%;
+  margin: 2rem auto;
+  display: block;
+}
+
+/* Clear float after content */
+.content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .imageLeft {
+    float: none;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .imageSmall {
+    max-width: 100%;
+  }
+}
+
+.content blockquote {
+
+  border-left: 4px solid var(--violet);
+  padding-left: 2rem;
+  font-style: italic;
+  margin: 3rem 0;
+  color: white;
+}
+
+.articleFooter {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cta {
+  background: linear-gradient(135deg, rgba(85, 51, 255, 0.1), rgba(64, 224, 208, 0.05));
+  padding: 4rem;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.cta h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.cta p {
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: var(--violet);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(85, 51, 255, 0.3);
+}
+
+.ctaButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(85, 51, 255, 0.4);
+}

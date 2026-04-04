@@ -1,0 +1,32 @@
+:root {
+  --bg-deep: #080514; /* luxury deep violet/space */
+  --bg-card: #0e0a24; /* subtle purple-tinted card */
+  --bg-card2: #150d3a; /* deeper purple overlay */
+  --bg-glass: rgba(255, 255, 255, 0.04);
+  
+  --color-primary: #5533ff; /* brand violet/indigo */
+  --color-secondary: #40e0d0; /* brand turquoise/cyan */
+  --violet: #5533ff;
+  --cyan-dim: #2ebaa8; /* slightly darker turquoise for gradients */
+  --color-background: var(--bg-deep);
+  --color-surface: var(--bg-card);
+  
+  --color-text: #f0eeff;
+  --color-text-muted: rgba(200, 195, 255, 0.65);
+  --text-soft: rgba(200, 195, 255, 0.45);
+  
+  --color-border: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(85, 51, 255, 0.35);
+  --color-error: #ff4d4f;
+
+  --font-heading: 'Nunito', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  
+  --transition-normal: 0.3s ease;
+}
+

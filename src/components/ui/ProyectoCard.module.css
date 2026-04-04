@@ -1,0 +1,108 @@
+.card {
+  display: block;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(98, 85, 244, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #150d3a;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: rgba(255,255,255,0.1);
+  font-size: 1.2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+  background: var(--violet);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 8px 16px rgba(85, 51, 255, 0.3);
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.categories {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-secondary);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.client {
+  font-size: 0.9rem;
+  color: rgba(200, 195, 255, 0.6);
+}

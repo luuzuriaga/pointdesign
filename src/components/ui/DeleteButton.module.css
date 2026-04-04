@@ -1,0 +1,36 @@
+.button {
+  background: none;
+  border: none;
+  color: #ff4d4f;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.button:hover {
+  background: rgba(255, 77, 79, 0.1);
+}
+
+.button.confirming {
+  background: #ff4d4f;
+  color: white;
+  animation: pulse 1s infinite;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
