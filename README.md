@@ -55,8 +55,8 @@ src/
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-repo/point-design.git
-    cd point-design
+    git clone https://github.com/luuzuriaga/pointdesign.git
+    cd pointdesign
     ```
 
 2.  **Install dependencies:**
